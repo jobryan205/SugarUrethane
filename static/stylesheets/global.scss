@@ -1,0 +1,44 @@
+$color-primary: #fbffff;
+$color-secondary: darken($color-primary, 05%);
+
+$nav-height: 50px;
+
+$screen-xs: 0;
+$screen-s: 768px;
+$screen-m: 992px;
+$screen-l: 1200px;
+$screen-xl: 1400px;
+
+
+@mixin set-width($map) {
+    @each $screen-width, $width in $map {
+        @media screen and (min-width: $screen-width) {
+            width: $width;
+        }
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $color-primary;
+}
+
+.navbar {
+    text-align: center;
+    background-color: $color-primary;
+    // border-bottom: 1px solid $color-secondary;
+    box-shadow: 0 1.5px $color-secondary;
+
+    .nav {
+        float: none;
+        display: inline-block;
+    }
+}
+
+.content-block {
+    margin-top: $nav-height;
+    text-align: center;
+}
