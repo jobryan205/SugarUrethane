@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAqBA,CAAE,CACE,UAAU,CAAE,UAAU,CAG1B,OAAQ,CACJ,UAAU,CAAE,MAAM,CAClB,gBAAgB,CA3BJ,IAAO,CA4BnB,aAAa,CAAE,cAA0B,CAG7C,cAAe,CACX,UAAU,CA7BD,IAAI,CA8Bb,UAAU,CAAE,MAAM",
-"sources": ["global.scss"],
-"names": [],
-"file": "global.css"
-}

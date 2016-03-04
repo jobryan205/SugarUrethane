@@ -1,5 +1,7 @@
-$color-primary: #fbffff;
-$color-secondary: darken($color-primary, 05%);
+$color-primary: #FFFFFF;
+$color-secondary: #CAC6B1;
+$color-blue: #407EC9;
+$color-gray: #BDBDBD;
 
 $nav-height: 50px;
 
@@ -8,6 +10,8 @@ $screen-s: 768px;
 $screen-m: 992px;
 $screen-l: 1200px;
 $screen-xl: 1400px;
+
+$font-primary: 'Raleway', sans-serif;
 
 
 @mixin set-width($map) {
@@ -18,27 +22,24 @@ $screen-xl: 1400px;
     }
 }
 
-* {
-    box-sizing: border-box;
+.card {
+    border-radius: 6px;
+    box-shadow: 2px 3px 5px 2px $color-gray;
+    display: inline-block;
 }
 
-body {
-    background-color: $color-primary;
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: "";
 }
 
-.navbar {
-    text-align: center;
-    background-color: $color-primary;
-    // border-bottom: 1px solid $color-secondary;
-    box-shadow: 0 1.5px $color-secondary;
-
-    .nav {
-        float: none;
-        display: inline-block;
-    }
+.clearfix:after {
+    clear: both;
 }
 
-.content-block {
-    margin-top: $nav-height;
-    text-align: center;
+.clearfix {
+    *zoom: 1;
+    clear: both;
 }

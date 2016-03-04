@@ -1,0 +1,11 @@
+@import "global";
+
+* {
+    box-sizing: border-box;
+    text-align: center;
+    font-family: $font-primary;
+}
+
+body {
+    background-color: $color-primary;
+}

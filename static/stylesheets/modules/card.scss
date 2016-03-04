@@ -1,0 +1,23 @@
+.card {
+        
+    
+
+    //CHILDREN
+    &__img {
+        width: 100%;
+        padding: 10px;
+    }
+
+
+    //MODIFIERS
+    &--large {
+        margin: 0 20px;
+        width: 400px;
+    }
+
+    &--small {
+        margin: 0 20px;
+        width: 300px;
+    }
+
+} 

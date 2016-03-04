@@ -1,0 +1,35 @@
+.navbar {
+    background-color: rgba(255, 255, 255, 0);
+    border-bottom: none;
+
+    &__brand {
+        float: left;
+        width: 150px;
+        padding-top: 8px;
+    }
+
+}
+
+.nav {
+    padding-top: 25px;
+    float: right;
+    display: inline-block;
+
+    &__li {
+        &__a {
+            font-size: 1.15em;
+            color: white;
+            font-weight: 800;
+            text-shadow: 1px 1px 1px $color-secondary;
+
+        }
+        // border-right: 1px solid $color-secondary;
+        padding: 0 20px;
+
+        &__hover { //need to figure this out
+            a {
+                color: $color-secondary;
+            }
+        }
+    } 
+}

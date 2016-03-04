@@ -1,5 +1,39 @@
 <!DOCTYPE html>
 {% extends "layout.html" %}
 {% block content %}
-    <img id="sugar-logo" src="static/images/logo.png" alt="logo" />
+    <!-- <img id="sugar-logo" src="static/images/logo.png" alt="logo" /><br> -->
+    <section class="slideshow">s
+        <!-- <div class="outer-wrapper">
+            <div class="icon-wrapper">
+                <i class="fa fa-arrow-circle-down" id="arrow"></i>
+            </div>
+        </div> -->
+        <div class="slide-selectors">
+            <div class="arrows clearfix">
+                <span class="fa fa-angle-left left"></span>
+                <span class="fa fa-angle-right right"></span>
+            </div>
+
+            <ul>
+                <li><span class="fa fa-circle selected"></span></li>
+                <li><span class="fa fa-circle"></span></li>
+                <li><span class="fa fa-circle"></span></li>
+                <li><span class="fa fa-circle"></span></li>
+                <li><span class="fa fa-circle"></span></li>
+            </ul>
+        </div>
+    </section>
+    <section class="product-guide">
+        <h1>Product</h1><br>
+        <div class="card">
+            <img src="static/images/Cubes.png" alt="Sugar Cubes" />
+            <h2>Cubes</h2>
+        </div>
+        <div class="card">
+            <img src="static/images/Canes.png" alt="Sugar Canes" />
+            <h2>Canes</h2>
+        </div>
+        <br><br>
+    </section>
+    
 {% endblock %}
